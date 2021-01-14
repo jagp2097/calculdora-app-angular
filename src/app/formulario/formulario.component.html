@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-6">
+    <label for="operandoA" class="form-label">Operando A</label>
+    <input id="operandoA"
+      type="number"
+      class="form-control"
+      (input)="onOperandoA($event)"
+      [(ngModel)]="operandoA">
+
+    <label for="operandoB" class="form-label">Operando B</label>
+    <input id="operandoB"
+      type="number"
+      class="form-control"
+      (input)="onOperandoB($event)"
+      [(ngModel)]="operandoB">
+  </div>
+
+  <div class="col-md-6">
+    <button class="btn btn-success m-2"
+      (click)="onSumar()">Suma</button>
+    <br>
+
+    <button class="btn btn-info m-2"
+      (click)="onRestar()">Resta</button>
+    <br>
+
+    <button class="btn btn-warning m-2"
+      (click)="onMultiplicar()">Multiplicación</button>
+    <br>
+
+    <button class="btn btn-danger m-2"
+      (click)="onDividir()">División</button>
+  </div>
+</div>
+
+
